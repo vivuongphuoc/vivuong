@@ -1,0 +1,691 @@
+﻿
+/*************************
+*******MAIN CSS******
+**************************/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Abel);
+
+body {
+ /* font-family: 'Roboto', sans-serif;*/
+ font-family: "Open Sans",Trebuchet MS,Helvetica,Arial,sans-serif;
+ position: relative;
+ font-weight:400px;
+}
+
+ul li {
+  list-style: none;
+}
+a, a:visited {
+    color: #c8001a;
+    text-decoration: none;
+}
+a {
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+a:hover {
+ color: #c8001a;
+ outline: none;
+ text-decoration:none;
+}
+
+a:focus {
+  outline:none;
+  outline-offset: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans",Trebuchet MS,Helvetica,Arial,sans-serif;
+}
+
+.btn:hover, 
+.btn:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+
+.pad_l{
+    padding-left: 0;
+}
+.pad_r{
+    padding-right: 0;
+}
+
+
+/*************************
+*******Header CSS******
+**************************/
+#header{
+   box-shadow: #cccccc 0 4px 4px;
+}
+#header-content {
+    position: relative;
+    height: 160px;
+
+}
+#main, #footer, .region-doormat, .navigation, #main-menu > ul, #main-menu > ul > li > .sub-menu > .item-list {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#header-content, #main, #footer, .region-doormat, .navigation, #main-menu > ul, #main-menu > ul > li > .sub-menu > .item-list {
+    margin-left: auto;
+    margin-right: auto;
+    width: 964px;
+}
+
+#block-search-form form {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #e4e4e4;
+    border-top-color: #bbb;
+    border-bottom-color: #e0e0e0;
+}
+#block-search-form .form-text {
+    border: 0;
+    background: transparent;
+    padding: 2px 4px;
+    color: #555;
+    width: 85px;
+    border-radius: 5px;
+    text-shadow: 1px 0 1px #fff;
+}
+#block-search-form .form-submit {
+    background: url(http://cdn.msf.org/sites/msf.org/themes/custom/msf_org_zen/images/icon-search.png) 50% 50% no-repeat;
+    text-indent: -9999px;
+    height: 24px;
+    width: 24px;
+    border: 0;
+}
+
+.region-header-top{
+  margin: 10px 10px 0 10px;
+}
+
+
+.block-sites .block-title-sites{
+    margin: 0;
+    position: relative;
+    padding-right: 12px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #555;
+}
+.block-sites .block-title-sites::after{
+
+    right: 0;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #E2001A;
+    border-width: 3px;
+    top: 50%;
+    margin-top: -1px;
+}
+
+
+/***social****/
+.social-icons {
+
+    border-left: 1px solid #E4E4E4;
+    border-right: 1px solid #E4E4E4;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+.social-icons ul{
+   padding: 0 0px 0 5px;
+}
+.social-icons li{
+  float: left;
+  margin-right: 5px;
+}
+
+
+
+/***language****/
+
+.block-language {
+    margin-right: 100px;
+}
+
+.block-language ul li{
+   float: left;
+   margin: 0 0 0 10px;
+   padding: 0 0 0 10px;
+}
+
+.block-language ul li {
+
+    border-left: 1px solid #E4E4E4;
+}
+
+.block-language ul li:first-child {
+    border-left: 0;
+}
+.block-language ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+.block-language ul li a.active {
+    color: #E2001A;
+}
+
+/*logo*/
+
+#logo img {
+    vertical-align: bottom;
+    padding-top: 10px;
+    height: 91px;
+}
+#header-content {
+    background: #fff url(http://cdn.msf.org/sites/msf.org/themes/custom/msf_org_zen/images/header_banner_EN.jpg) no-repeat 320px -20px;
+    background-size: 656px 158px;
+}
+
+
+
+
+/*Menu*/
+
+#navigation {
+    background: url(http://cdn.msf.org/sites/msf.org/themes/custom/msf_org_zen/images/navigation-bg.png);
+    padding: 0;   
+    width: 100%;
+    z-index: 20;
+
+}
+
+#navigation #main-menu {
+    bottom: 0;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    clear: both;
+}
+
+#navigation #main-menu .menu-name-main-menu ul {
+    margin: 0;
+    padding: 0;
+}
+#main-menu .menu-name-main-menu > ul {
+    display: table;
+    width: 100%;
+}
+
+#main-menu .menu-name-main-menu > ul > li {
+    display: table-cell;
+    padding: 8px 0;
+
+
+
+}
+
+
+#navigation #main-menu .menu-name-main-menu ul li a {
+    display: block;
+    background: #FFF;
+    padding: 3px 10px;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+ul.sub-menu {
+    position: absolute;
+    top: 41px;
+    background: #fff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 999;
+}
+.dropdown:hover > .sub-menu{
+    display: block;
+}
+/*END HEADER*/
+
+
+/*************************
+*******MAIN CSS******
+**************************/
+
+#main{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 964px;
+
+    padding-top: 35px;
+    position: relative;
+}
+
+/*** Slide ***/
+
+#slider {
+  padding-bottom: 45px;
+}
+
+.carousel-indicators li {
+  background: #C4C4BE;
+}
+
+.carousel-indicators li.active {
+    background: #c8001a;
+}
+
+
+
+.item h2 {
+   font-weight: normal;
+    clear: both;
+    font-size: 1.25em;
+    line-height: 1.2em;
+    padding-bottom: 12px;
+    margin: 0;
+    color: #FFF;
+}
+
+.item  p {
+display: block;
+    font-size: 13px;
+    line-height: 17px;
+    position: relative;
+    color: #B0AFAF;
+    padding-right: 12px;
+}
+
+
+
+.box-header {
+    display: block;
+    padding: 10px 0px;
+    position: relative;
+}
+.box-header .box-title {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1;
+}
+
+.item a.even-description::after {
+    right: 10px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-left-color: #E2001A;
+    border-width: 4px;
+    bottom: 13px;
+    z-index: 15;
+}
+
+.carousel-indicators {
+    bottom: -40px;
+    left: 90%;
+}
+/*************/
+
+
+.box {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 20px;
+    width: 97.6%;
+
+}
+.box-body {
+
+    height: 300px;
+    background: #000;
+    color: #fff;
+
+}
+
+.box-footer {
+ border-top: 1px solid #d9d9d9;
+ padding: 10px 15px;
+ background: #FFF;
+ font-size: 0.75em;
+
+}
+
+.panel-left{
+
+    color: #FFF;
+
+
+}
+.panel-right{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.item-next{
+    float: left;
+    width: 80%;
+    font-size: 12px;
+}
+.item-next span{
+    color: #999;
+}
+
+
+/*** Sidebar ***/
+.link-title {
+    text-shadow: -1px 1px 2px #fff;
+    font-weight: 600;
+
+}
+.link-title h3 {
+    font-weight: normal;
+    font-size: 1.25em;
+    line-height: 1.2em;
+    margin: 0 0 .5em;
+}
+.link-title p {
+    font-size: 15px;
+}
+
+
+
+.region-sidebar .attachment-block {
+ /* border: 1px solid #f4f4f4;*/
+ /* padding: 5px;*/
+ /*  margin-bottom: 0px;*/
+ margin-top: 30px;
+
+}
+
+.region-sidebar .attachment-block .attachment-img {
+    max-width: 100px;
+    max-height: 100px;
+    height: auto;
+    float: left;
+}
+.region-sidebar .attachment-block .attachment-pushed {
+    margin-left: 70px;
+}
+.region-sidebar .attachment-block a{
+ color: #000;
+}
+
+.title-rgba {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 12px;
+    padding: 7px;
+    background: rgba(0, 0, 0, 0.6);
+    letter-spacing: 2px;
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+/*** Latest news ***/
+
+.page-header {
+    margin: 50px 0 0px 0;
+    border: 0;
+}
+.panel-news .news-image-wrapper {
+    padding-left: 0;
+}
+
+.cards {
+    border: 1px solid #d9d9d9;
+    overflow: hidden;
+     width: 100%;
+}
+.border-bottom{
+    border-bottom: 3px solid #CE0018;
+}
+
+.short-title{
+    padding: 5px;
+    display: block;
+    height: 75px; 
+    overflow: hidden;
+}
+
+.short-title a{
+ color: #000;
+}
+.box-overlay {
+
+  background-color: #c8001a;
+  top: 0;
+  display: none;
+  height: 0;
+  position: absolute;
+  width: 93%;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: #fff;
+  padding: 10px 10px 5px;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+.cards:hover .box-overlay {
+  display: block;
+  height:100%;
+}
+
+.overlay-content .item-date{
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.overlay-content label{
+    margin-bottom:0;
+}
+
+.story-right{
+    padding: 10px 50px;
+}
+
+.story-right p{
+    line-height: 24px;
+    font-size: 16px;
+}
+.story-left {
+    clear: both;
+    width: 473px;
+}
+.copyright {
+    font-size: 11px;
+    line-height: 17px;
+}
+
+.story-border-top{
+    border-top: 1px solid #d9d9d9;
+}
+
+.story-right .short-title h4{
+    font-weight: bold;
+}
+.more_photos {
+    width: 226px;
+    margin-top: 25px;
+}
+
+.more_photos a {
+    color: #000000;
+    font-weight: 600;
+    border: 1px solid #cbc9ca;
+    border-radius: 5px;
+    padding: 5px 35px 5px 10px;
+    background: url(http://cdn.msf.org/sites/msf.org/themes/custom/msf_org_zen/images/red-arrow-right.png?1395658535) no-repeat right 10px center;
+    line-height: 40px \9;
+}
+
+
+/*******Panel links*******/
+
+.panel-links .attachment-block{
+   border-top: 1px solid #c8001a;
+    border-bottom: 1px solid #c8001a;
+    padding: 15px 0;
+    margin-bottom: 10px;
+
+}
+
+.panel-links .attachment-block .attachment-img {
+    max-width: 100px;
+    max-height: 100px;
+    height: auto;
+    float: left;
+     margin-top: 5px;
+}
+ .attachment-block .attachment-pushed {
+    margin-left: 110px;
+    height: 108px;
+    overflow: hidden;
+    font-size: 15px;
+}
+.attachment-block .attachment-pushed a{
+    color: #000;
+}
+.panel-links .attachment-block .attachment-heading {
+    margin: 0;
+}
+.panel-links .attachment-block .attachment-text {
+    margin-bottom: 5px;
+    height: 63px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+16. Footer
+================================ */
+
+footer{
+    background:#f2f2f2;
+}
+#sub-footer{
+    border-top: 1px solid #ddd;
+    background:#fff;
+}
+
+
+footer{
+    padding: 40px 0 0 0;
+    margin-top: 50px;
+}
+
+footer a {
+    color:#666 !important;
+
+}
+
+footer a:hover {
+    color:#444;
+     text-decoration: underline !important;
+}
+
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6{
+    color:#666;
+}
+
+footer address {
+    line-height:1.6em;
+}
+
+footer h5 a:hover, footer a:hover {
+    text-decoration:none;
+}
+.col-sm-25{
+    width: 20%;
+    float: left;
+    padding-right: 15px;
+}
+/*#footer > div.container > div > div:nth-child(1) > div > */
+ul.link-list{
+    padding-left: 0;
+}
+
+ul.social-network {
+    list-style:none;
+    margin:0;
+}
+
+ul.social-network li {
+    display:inline;
+    margin: 0 5px;
+}
+
+footer ul.social-network li i {
+    font-size: 1.3em;
+}
+
+#sub-footer{
+       text-shadow: none;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px 0 0 0;
+}
+
+#sub-footer p{
+    margin:0;
+    padding:0;
+    line-height: 25px;
+}
+
+#sub-footer .copyright {
+    font-size:15px;
+}
+#sub-footer span{
+        color: #777;
+    font-size: 10px;
+
+}
+
+#sub-footer ul.social-network {
+    /*float:right;*/
+}
+
+
+/* ===============================
+ Live preview purpose
+================================ */
+/* --- buttons --- */
